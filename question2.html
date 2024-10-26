@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>q2</title>
+</head>
+<body>
+  <h3>
+    Question 2:
+
+    Create a program that accepts the user's first name, last name, and age as inputs. The program should:
+
+    Concatenate the first and last name to display the full name.
+
+    Use a ternary operator to check if the user is 18 or older and display a message indicating whether they are
+    eligible to vote.
+
+    Use a string operator to calculate the length of the full name and log whether the name is longer than 10
+    characters.
+
+</h3>
+
+<h3>open console for output</h3>
+<script>
+  
+
+//  question 2
+
+let firstName = prompt("enter the first name");
+let lastName = prompt("enter the last name");
+let age = Number(prompt("enter the age"));
+console.log(`FullName : ${firstName} ${lastName}`);
+(age > 18) ? console.log("Eligible for vote") : console.log("not Eligible for vote");
+let fullName = firstName + " " + lastName;
+(fullName.length > 10)? console.log(`${fullName}`):console.log("full name is less than 10 letters");
+</script>
+</body>
+</html>

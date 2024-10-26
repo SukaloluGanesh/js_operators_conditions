@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>q9</title>
+</head>
+<body>
+  <h3>
+    Question 9:
+
+    Create a program that evaluates a person’s eligibility for a loan. The program should:
+
+    Ask for the person’s age, salary, and credit score.
+
+    Use logical operators (&&, ||) to check if the person is eligible for a loan (e.g., age ≥ 21, salary > $30,000,
+    or credit score > 650).
+
+    Log whether the person is approved or denied based on these conditions.
+
+
+
+</h3>
+
+<h3>open console for output</h3>
+<script>
+  // question 9
+
+let age = prompt("Enter the age");
+let salary = prompt("Enter the salary");
+let creditScore = prompt("Enter the credit score ");
+
+
+if(age >= 21){
+  if(salary > 30000){
+    if(creditScore > 650){
+      console.log("Eligible for the loan");
+    }
+  }
+}else{
+  console.log("not eligible for the loan");
+}
+
+(age >= 21 && salary > 30000 && creditScore > 650)? console.log("Eligible for the loan"):console.log("not Eligible for the loan")
+
+</script>
+</body>
+</html>
